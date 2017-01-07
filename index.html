@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="google-signin-client_id" content="750697929971-smivpf6p2es6cupbcv5aio4dnvlj2nj7.apps.googleusercontent.com">
+    <title>Happy Medium</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW4fuvgb119VPdeEAb61U3KFHVTXkdQvE&sensor=false&libraries=places" async defer></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Happy Medium</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li id="create_room" class="disabled"><a>Start a Room</a></li>
+                                <li id="join_room" class="dropdown disabled">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Join a Room<span class="caret"></span></a>
+                                    <ul id="ul_join_room" class="dropdown-menu">
+                                        <li><a>No rooms created</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>About</a></li>
+                                <li id="sign_out" class="disabled"><a onclick="signOut();">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+            <div id="hello"></div>
+        </div>
+        <div id="content">
+            <div class="row">
+                <div class="col-md-9 space">
+                    <div id="mapArea"></div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sidebar">
+                        <h4>Users</h4>
+                        <ul class="lists" id="list_users"></ul>
+                    </div>
+                    <div class="sidebar">
+                        <h4>Meeting Places</h4>
+                        <ul class="lists" id="meeting_places"></ul>
+                    </div>
+                    <div class="sidebar happy_chat">
+                        <h4>HappyChat</h4>
+                        <div class="lists" id="happy_chat"></div>
+                        <div class="happy_msg"><input type="text" id="happy_msg" placeholder="Type message..." /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- test comment -->

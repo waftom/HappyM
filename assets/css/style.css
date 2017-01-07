@@ -1,0 +1,145 @@
+#topSearch {
+  width: 250px;
+}
+
+#topNav a {
+  /*background-color: #ef9a9a;*/
+  color: black;
+}
+#mapArea{
+  border: 3px solid teal;
+  width: 100%;
+  height: 650px;
+}
+
+body a{
+  color: inherit;
+}
+
+nav ul a:hover {
+  background-color: #4db6ac;
+}
+
+.chip {
+  height: auto;
+  overflow: auto;
+}
+
+#content {
+    display: none;
+}
+
+#menu li a {
+    font-size: 16px !important;
+    text-decoration: none !important;
+}
+
+.navbar-collapse {
+    float: right;
+}
+
+.navbar-collapse li {
+    cursor: pointer;
+}
+
+.space {
+    margin-top: 20px;
+}
+
+.sidebar {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+.sidebar h4 {
+    background-color: #4db6ac;
+    padding: 10px 15px 10px 15px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.lists li {
+    list-style-type: none;
+}
+
+.lists {
+    padding-left: 0px;
+}
+
+.lists li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+.lists li:last-child {
+    border-bottom: 0;
+}
+
+#happy_chat {
+    height: 165px;
+    overflow-y: scroll;
+}
+
+#happy_chat::-webkit-scrollbar {
+    width: 1em;
+}
+
+#happy_msg {
+    width: 100%;
+    padding: 10px 10px;
+    border: 0;
+    border-top: 1px solid #CCC;
+}
+
+#happy_msg:active {
+    border: 0;
+    border-top: 1px solid #CCC;
+}
+
+.happy_msg {
+    bottom: 0px;
+}
+
+.msg {
+    font-size: 14px;
+    padding: 0 10px 10px 10px;
+}
+
+.msg_same {
+    font-size: 14px;
+    margin-top: -15px;
+    padding: 0 10px 10px 10px;
+}
+
+.msg_id {
+    color: #4db6ac;
+    font-weight: bold;
+}
+
+.msg_id_owner {
+    color: #0085CA;
+    font-weight: bold;
+}
+
+.msg_msg {
+    color: #333;
+}
+
+.msg a {
+    text-decoration: none;
+}
+
+.places {
+    cursor: pointer;
+}
+
+#ul_join_room {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+#ul_join_room::-webkit-scrollbar {
+    width: 1em;
+}
