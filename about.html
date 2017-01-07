@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="google-signin-client_id" content="750697929971-smivpf6p2es6cupbcv5aio4dnvlj2nj7.apps.googleusercontent.com">
-    <title>Happy Medium</title>
+    <title>About - Happy Medium</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW4fuvgb119VPdeEAb61U3KFHVTXkdQvE&sensor=false&libraries=places"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW4fuvgb119VPdeEAb61U3KFHVTXkdQvE&sensor=false&libraries=places" async defer></script>
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/javascript/script.js"></script>
 </head>
@@ -23,9 +23,8 @@
                     <div class="col-md-12">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="#">Happy Medium</a>
+                            <a class="navbar-brand" href="index.html">Happy Medium</a>
                         </div>
-
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
@@ -37,7 +36,7 @@
                                         <li><a>No rooms created</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="about.html">About</a></li>
+                                <li class="hl"><a src="about.html">About</a></li>
                                 <li id="sign_out" class="disabled"><a onclick="signOut();">Sign out</a></li>
                             </ul>
                         </div>
@@ -46,40 +45,23 @@
             </div>
         </div>
     </nav>
-    <br>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- middle section -->
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="g-signin2" data-onsuccess="onSignIn"></div>
-            </div>
-            <div id="hello"></div>
-        </div>
-        <div id="content">
-            <div class="row">
-                <div class="col-md-9 space">
-                    <div id="mapArea"></div>
-                </div>
-                <div class="col-md-3">
-                    <div class="sidebar">
-                        <h4>Users</h4>
-                        <ul class="lists" id="list_users"></ul>
-                    </div>
-                    <div class="sidebar">
-                        <h4>Meeting Places</h4>
-                        <ul class="lists" id="meeting_places"></ul>
-                    </div>
-                    <div class="sidebar happy_chat">
-                        <h4>HappyChat</h4>
-                        <div class="lists" id="happy_chat"></div>
-                        <div class="happy_msg"><input type="text" id="happy_msg" placeholder="Type message..." /></div>
-                    </div>
-                </div>
-            </div>
+            <h1>About</h1>
+            <p>
+                Happy Medium is an application that simplifies deciding meeting places. Rooms are created where users share their current
+                location, which determine the fairest options for places to meet. Our soon-to-be patented fairness algorithm
+                is based on several factors: number of users, their vicinity, and commute distance.
+            </p>
+            <p>Happy Medium takes the stress out of finding a meeting place everyone can agree on. Let us think for you, so
+                you don't have to.</p>
+            <h2>Team</h2>
+            <p>Wellington Fernandes, Brian Chang, Bob Deckard, Robert Lovelett</p>
+            <h2>Extra Credit:</h2>
+            <p>“doot da doot da doOoOo” - Osei Bonsu</p>
         </div>
     </div>
 </body>
-</html>
 
-<!-- test comment -->
+</html>
